@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog de Tecnología Educativa — Compu@click</title>
+  <meta name="description" content="Artículos sobre informática infantil, robótica en el aula y crianza digital. Consejos prácticos para docentes y padres." />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Inicio Compu@click">
+        <img src="assets/logo.svg" alt="Logo Compu@click" />
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">🏠 Inicio</a></li>
+        <li role="none"><a href="curriculum.html" role="menuitem">📚 Currículum</a></li>
+        <li role="none"><a href="blog.html" role="menuitem">✏️ Blog</a></li>
+        <li role="none"><a href="actividades.html" role="menuitem">🎮 Actividades</a></li>
+        <li role="none"><a href="contacto.html" class="nav-cta" role="menuitem">📩 Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Blog de Tecnología Educativa">
+      <div class="section-tag">✏️ Contenido Educativo</div>
+      <h1 class="section-title">Blog de <span class="orange">Tecnología Educativa</span></h1>
+      <p class="section-subtitle">
+        Artículos prácticos sobre informática infantil, robótica y crianza digital para docentes y familias.
+      </p>
+    </section>
+
+    <!-- BLOG SECTION -->
+    <section class="blog-section" aria-label="Artículos del blog">
+      <div class="section-inner">
+
+        <!-- Filtros -->
+        <div class="blog-filters" role="group" aria-label="Filtrar artículos por categoría">
+          <button class="filter-btn active" data-filter="all" id="filter-all">📰 Todos</button>
+          <button class="filter-btn" data-filter="informatica" id="filter-informatica">💻 Informática Infantil</button>
+          <button class="filter-btn" data-filter="robotica" id="filter-robotica">🤖 Robótica en el Aula</button>
+          <button class="filter-btn" data-filter="crianza" id="filter-crianza">👨‍👩‍👧 Crianza Digital</button>
+        </div>
+
+        <!-- Blog Grid -->
+        <div class="blog-grid" id="blogGrid">
+
+          <!-- Artículo 1 -->
+          <a href="#articulo-1" class="blog-card reveal" data-category="informatica" id="card-blog-1" aria-label="Leer artículo: Cómo enseñar a usar Paint a niños de 4 años">
+            <div class="blog-card-img cat-1">
+              <div class="blog-cat-badge">💻 Informática Infantil</div>
+              🎨
+            </div>
+            <div class="blog-card-body">
+              <div class="meta">
+                <span>📅 Julio 2026</span>
+                <span>·</span>
+                <span>⏱ 4 min de lectura</span>
+              </div>
+              <h3>Cómo enseñar a usar Paint a niños de 4 años (sin frustraciones)</h3>
+              <p>Estrategias prácticas y divertidas para introducir a los más pequeños en su primera herramienta digital de creación artística.</p>
+              <span class="read-more">Leer artículo <span>→</span></span>
+            </div>
+          </a>
+
+          <!-- Artículo 2 -->
+          <a href="#articulo-2" class="blog-card reveal reveal-delay-1" data-category="robotica" id="card-blog-2" aria-label="Leer artículo: Actividades desenchufadas para enseñar robótica sin robots">
+            <div class="blog-card-img cat-2">
+              <div class="blog-cat-badge">🤖 Robótica en el Aula</div>
+              🤖
+            </div>
+            <div class="blog-card-body">
+              <div class="meta">
+                <span>📅 Julio 2026</span>
+                <span>·</span>
+                <span>⏱ 5 min de lectura</span>
+              </div>
+              <h3>5 Actividades Desenchufadas para Enseñar Robótica sin Robots</h3>
+              <p>El pensamiento computacional se puede desarrollar sin tecnología. Descubre actividades físicas que desarrollan la lógica y la resolución de problemas.</p>
+              <span class="read-more">Leer artículo <span>→</span></span>
+            </div>
+          </a>
+
+          <!-- Artículo 3 -->
+          <a href="#articulo-3" class="blog-card reveal reveal-delay-2" data-category="crianza" id="card-blog-3" aria-label="Leer artículo: ¿Cuánto tiempo de pantalla es adecuado para mi hijo?">
+            <div class="blog-card-img cat-3">
+              <div class="blog-cat-badge">👨‍👩‍👧 Crianza Digital</div>
+              📱
+            </div>
+            <div class="blog-card-body">
+              <div class="meta">
+                <span>📅 Junio 2026</span>
+                <span>·</span>
+                <span>⏱ 6 min de lectura</span>
+              </div>
+              <h3>¿Cuánto Tiempo de Pantalla es Adecuado para mi Hijo? (Guía por Edades)</h3>
+              <p>La OMS y los expertos hablan. Te explicamos cuánto tiempo digital es saludable según la edad y cómo aprovecharlo de forma educativa.</p>
+              <span class="read-more">Leer artículo <span>→</span></span>
+            </div>
+          </a>
+
+          <!-- Artículo 4 -->
+          <a href="#articulo-4" class="blog-card reveal" data-category="informatica" id="card-blog-4" aria-label="Leer artículo: Los 7 beneficios de enseñar informática desde los 4 años">
+            <div class="blog-card-img cat-4">
+              <div class="blog-cat-badge">💻 Informática Infantil</div>
+              🌟
+            </div>
+            <div class="blog-card-body">
+              <div class="meta">
+                <span>📅 Junio 2026</span>
+                <span>·</span>
+                <span>⏱ 4 min de lectura</span>
+              </div>
+              <h3>Los 7 Beneficios de Enseñar Informática desde los 4 Años</h3>
+              <p>La evidencia científica respalda la educación tecnológica temprana. Descubre cómo impacta en el desarrollo cognitivo, la creatividad y la concentración.</p>
+              <span class="read-more">Leer artículo <span>→</span></span>
+            </div>
+          </a>
+
+          <!-- Artículo 5 -->
+          <a href="#articulo-5" class="blog-card reveal reveal-delay-1" data-category="robotica" id="card-blog-5" aria-label="Leer artículo: Scratch Jr: la herramienta de programación perfecta para niños de 5 años">
+            <div class="blog-card-img cat-1">
+              <div class="blog-cat-badge">🤖 Robótica en el Aula</div>
+              👾
+            </div>
+            <div class="blog-card-body">
+              <div class="meta">
+                <span>📅 Mayo 2026</span>
+                <span>·</span>
+                <span>⏱ 7 min de lectura</span>
+              </div>
+              <h3>Scratch Jr: La Herramienta de Programación Perfecta para Niños de 5 Años</h3>
+              <p>Guía completa para docentes y padres sobre cómo introducir Scratch Jr en el aula y en casa de forma progresiva y motivadora.</p>
+              <span class="read-more">Leer artículo <span>→</span></span>
+            </div>
+          </a>
+
+          <!-- Artículo 6 -->
+          <a href="#articulo-6" class="blog-card reveal reveal-delay-2" data-category="crianza" id="card-blog-6" aria-label="Leer artículo: Cómo hablar con tus hijos sobre seguridad en internet">
+            <div class="blog-card-img cat-2">
+              <div class="blog-cat-badge">👨‍👩‍👧 Crianza Digital</div>
+              🔐
+            </div>
+            <div class="blog-card-body">
+              <div class="meta">
+                <span>📅 Mayo 2026</span>
+                <span>·</span>
+                <span>⏱ 5 min de lectura</span>
+              </div>
+              <h3>Cómo Hablar con tus Hijos sobre Seguridad en Internet (de Forma Simple)</h3>
+              <p>Consejos prácticos y recursos para explicar a los niños qué información nunca deben compartir y cómo navegar de forma segura.</p>
+              <span class="read-more">Leer artículo <span>→</span></span>
+            </div>
+          </a>
+
+        </div><!-- /blog-grid -->
+
+        <!-- Próximas publicaciones -->
+        <div class="text-center mt-32 reveal">
+          <p style="color: var(--gray-text); font-size: 0.95rem; margin-bottom: 16px;">
+            📅 Nuevo artículo cada semana. ¡Suscríbete para no perderte nada!
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter-section" aria-label="Suscripción al newsletter">
+      <div class="section-inner">
+        <div class="section-tag" style="background: rgba(247,168,0,0.15); color: var(--orange-light);">📧 Newsletter</div>
+        <h2 class="section-title">¿No quieres perderte <span class="orange">ningún artículo?</span></h2>
+        <p class="section-subtitle">
+          Recibe cada semana los mejores consejos sobre educación digital directamente en tu correo. Gratis, siempre.
+        </p>
+        <form class="newsletter-form" id="newsletterForm" aria-label="Formulario de suscripción">
+          <input type="email" id="newsletter-email" placeholder="tucorreo@email.com" aria-label="Tu correo electrónico" required />
+          <button type="submit" class="btn-primary" id="newsletter-submit">
+            ✉️ Suscribirme
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="Logo Compu@click" />
+        <p>Educación digital desde la infancia. Enseñamos informática y robótica respetando el desarrollo cognitivo de cada niño.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="YouTube">▶️</a>
+          <a href="#" class="social-btn" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="curriculum.html">📚 Currículum</a>
+        <a href="blog.html">✏️ Blog</a>
+        <a href="actividades.html">🎮 Actividades</a>
+        <a href="contacto.html">📩 Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Categorías</h4>
+        <a href="#">💻 Informática Infantil</a>
+        <a href="#">🤖 Robótica en el Aula</a>
+        <a href="#">👨‍👩‍👧 Crianza Digital</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Compu@click. Todos los derechos reservados.</span>
+      <span>Hecho con ❤️ para la educación del futuro</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Newsletter
+    document.getElementById('newsletterForm')?.addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.innerHTML = '✅ ¡Suscrito!';
+      btn.disabled = true;
+      setTimeout(() => { btn.innerHTML = '✉️ Suscribirme'; btn.disabled = false; e.target.reset(); }, 3000);
+    });
+  </script>
+</body>
+</html>

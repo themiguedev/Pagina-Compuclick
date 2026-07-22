@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre Mí y Contacto — Compu@click</title>
+  <meta name="description" content="Conoce al equipo detrás de Compu@click. Contacta para implementar el currículum en tu colegio o para patrocinar el proyecto." />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* Extra styles specific to contact page */
+    .contact-options {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .contact-option {
+      background: var(--gray-light);
+      border: 2px solid var(--gray-mid);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--gray-text);
+    }
+    .contact-option:hover,
+    .contact-option.selected {
+      border-color: var(--blue);
+      background: rgba(26,60,143,0.06);
+      color: var(--blue);
+    }
+    .contact-option .opt-icon { font-size: 1.8rem; margin-bottom: 6px; display: block; }
+
+    .map-placeholder {
+      background: linear-gradient(135deg, #e8f4fd, #dce8f7);
+      border-radius: var(--radius-md);
+      height: 220px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: var(--blue);
+      font-weight: 700;
+      margin-top: 24px;
+      border: 2px dashed rgba(26,60,143,0.2);
+    }
+    .map-placeholder .map-icon { font-size: 3rem; }
+
+    .sponsor-highlight {
+      background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+      border-radius: var(--radius-lg);
+      padding: 36px 32px;
+      margin-top: 32px;
+      text-align: center;
+      color: var(--white);
+    }
+    .sponsor-highlight h3 {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+    .sponsor-highlight p {
+      font-size: 0.92rem;
+      color: rgba(255,255,255,0.75);
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+    .sponsor-benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .sponsor-benefit {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.85);
+    }
+    .sponsor-benefit::before { content: '✓'; color: var(--orange); font-weight: 900; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Inicio Compu@click">
+        <img src="assets/logo.svg" alt="Logo Compu@click" />
+      </a>
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">🏠 Inicio</a></li>
+        <li role="none"><a href="curriculum.html" role="menuitem">📚 Currículum</a></li>
+        <li role="none"><a href="blog.html" role="menuitem">✏️ Blog</a></li>
+        <li role="none"><a href="actividades.html" role="menuitem">🎮 Actividades</a></li>
+        <li role="none"><a href="contacto.html" class="nav-cta" role="menuitem">📩 Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="page-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="Sobre mí y Contacto">
+      <div class="section-tag">👋 Conectemos</div>
+      <h1 class="section-title">Sobre Mí &amp; <span class="orange">Contacto</span></h1>
+      <p class="section-subtitle">
+        Conoce la persona detrás de Compu@click y hablemos sobre cómo llevar la educación digital a tu colegio.
+      </p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" aria-label="Perfil y formulario de contacto">
+      <div class="section-inner">
+        <div class="contact-layout">
+
+          <!-- PERFIL -->
+          <div>
+            <div class="profile-card reveal">
+              <div class="profile-card-header">
+                <div class="profile-avatar" aria-hidden="true">👩‍💻</div>
+                <h3>Docente de Informática</h3>
+                <p>Especialista en Educación Digital Infantil</p>
+                <div class="profile-tags">
+                  <span class="profile-tag">💻 Informática Educativa</span>
+                  <span class="profile-tag">🤖 Robótica Infantil</span>
+                  <span class="profile-tag">🎓 Ed. Inicial</span>
+                </div>
+              </div>
+              <div class="profile-card-body">
+                <p>
+                  Soy docente de informática con más de <strong>8 años de experiencia</strong> trabajando con niños desde los 3 años. Mi pasión es transformar la forma en que los más pequeños se relacionan con la tecnología, convirtiéndola en una herramienta de aprendizaje, creatividad y juego.
+                </p>
+                <p>
+                  Diseñé <strong>Compu@click</strong> tras notar que no existía una propuesta curricular seria y lúdica para el nivel inicial en el ámbito de la informática y la robótica. Cada clase está diseñada con base pedagógica y probada en el aula real.
+                </p>
+                <ul class="profile-info-list">
+                  <li>
+                    <span class="info-icon">📍</span>
+                    Argentina — Disponible Online y Presencial
+                  </li>
+                  <li>
+                    <span class="info-icon">🎓</span>
+                    Docente de Informática + Esp. en Tecnología Educativa
+                  </li>
+                  <li>
+                    <span class="info-icon">⏳</span>
+                    8+ años de experiencia en aula
+                  </li>
+                  <li>
+                    <span class="info-icon">🤖</span>
+                    Talleres de robótica con niños de 4 a 10 años
+                  </li>
+                  <li>
+                    <span class="info-icon">📧</span>
+                    contacto@compuclick.edu
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Sponsor highlight -->
+            <div class="sponsor-highlight reveal reveal-delay-1" id="patrocinio" aria-label="Información de patrocinio">
+              <h3>🤝 ¿Quieres ser Patrocinador?</h3>
+              <p>
+                Compu@click está en pleno crecimiento. Asociar tu marca con la educación digital del futuro es una inversión con alto retorno de visibilidad.
+              </p>
+              <div class="sponsor-benefits">
+                <span class="sponsor-benefit">Logo en todas las páginas</span>
+                <span class="sponsor-benefit">Banner en sección de actividades</span>
+                <span class="sponsor-benefit">Mención en artículos del blog</span>
+                <span class="sponsor-benefit">Certificado de aliado educativo</span>
+                <span class="sponsor-benefit">Presencia en redes sociales</span>
+                <span class="sponsor-benefit">Impacto en familias y docentes</span>
+              </div>
+              <a href="#contacto-form" class="btn-primary" id="cta-patrocinar" style="display: inline-flex;">
+                💡 Quiero ser patrocinador
+              </a>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="contact-form-wrap reveal reveal-delay-1" id="contacto-form">
+            <h3>📩 Escribinos</h3>
+            <p>
+              ¿Eres director/a de colegio, docente, o quieres patrocinar el proyecto? Completa el formulario y te contactamos en menos de 48 horas.
+            </p>
+
+            <!-- Tipo de consulta -->
+            <div class="contact-options" role="group" aria-label="Tipo de consulta">
+              <button class="contact-option selected" data-type="colegio" id="opt-colegio" aria-pressed="true">
+                <span class="opt-icon">🏫</span>
+                Implementar en mi Colegio
+              </button>
+              <button class="contact-option" data-type="patrocinio" id="opt-patrocinio" aria-pressed="false">
+                <span class="opt-icon">🤝</span>
+                Patrocinar el Proyecto
+              </button>
+              <button class="contact-option" data-type="docente" id="opt-docente" aria-pressed="false">
+                <span class="opt-icon">👩‍🏫</span>
+                Soy Docente Interesada/o
+              </button>
+              <button class="contact-option" data-type="otro" id="opt-otro" aria-pressed="false">
+                <span class="opt-icon">💬</span>
+                Otra Consulta
+              </button>
+            </div>
+
+            <form id="contactForm" novalidate aria-label="Formulario de contacto">
+              <input type="hidden" id="tipoConsulta" name="tipo" value="colegio" />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombreContacto">Nombre *</label>
+                  <input type="text" id="nombreContacto" name="nombre" placeholder="Tu nombre" required autocomplete="given-name" />
+                </div>
+                <div class="form-group">
+                  <label for="apellidoContacto">Apellido *</label>
+                  <input type="text" id="apellidoContacto" name="apellido" placeholder="Tu apellido" required autocomplete="family-name" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="emailContacto">Correo electrónico *</label>
+                <input type="email" id="emailContacto" name="email" placeholder="tu@correo.com" required autocomplete="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="institucionContacto">Institución / Empresa</label>
+                <input type="text" id="institucionContacto" name="institucion" placeholder="Colegio, empresa u organización" autocomplete="organization" />
+              </div>
+
+              <div class="form-group">
+                <label for="cargoContacto">Cargo / Rol</label>
+                <select id="cargoContacto" name="cargo">
+                  <option value="">Selecciona tu rol...</option>
+                  <option value="director">Director/a de colegio</option>
+                  <option value="docente">Docente</option>
+                  <option value="padre">Padre / Madre</option>
+                  <option value="empresa">Representante de empresa</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensajeContacto">Tu mensaje *</label>
+                <textarea id="mensajeContacto" name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte o cómo te gustaría colaborar con Compu@click..." required></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn" id="btn-enviar-contacto">
+                <span>📩</span> Enviar Mensaje
+              </button>
+            </form>
+
+            <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+              <div class="success-icon">🎉</div>
+              <h4>¡Mensaje enviado con éxito!</h4>
+              <p>Gracias por contactarnos. Te responderemos en menos de 48 horas hábiles. ¡Hasta pronto!</p>
+            </div>
+
+          </div><!-- /form-wrap -->
+        </div><!-- /contact-layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo.svg" alt="Logo Compu@click" />
+        <p>Educación digital desde la infancia. Enseñamos informática y robótica respetando el desarrollo cognitivo de cada niño.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Facebook">📘</a>
+          <a href="#" class="social-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="social-btn" aria-label="YouTube">▶️</a>
+          <a href="#" class="social-btn" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <a href="index.html">🏠 Inicio</a>
+        <a href="curriculum.html">📚 Currículum</a>
+        <a href="blog.html">✏️ Blog</a>
+        <a href="actividades.html">🎮 Actividades</a>
+        <a href="contacto.html">📩 Contacto</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto Rápido</h4>
+        <a href="mailto:contacto@compuclick.edu">📧 contacto@compuclick.edu</a>
+        <a href="contacto.html#patrocinio">🤝 Ser Patrocinador</a>
+        <a href="curriculum.html">📥 Descargar Currículum</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Compu@click. Todos los derechos reservados.</span>
+      <span>Hecho con ❤️ para la educación del futuro</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Contact type options
+    const options = document.querySelectorAll('.contact-option');
+    const tipoInput = document.getElementById('tipoConsulta');
+    options.forEach(opt => {
+      opt.addEventListener('click', () => {
+        options.forEach(o => { o.classList.remove('selected'); o.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected');
+        opt.setAttribute('aria-pressed', 'true');
+        if (tipoInput) tipoInput.value = opt.dataset.type;
+        // Update textarea placeholder
+        const textarea = document.getElementById('mensajeContacto');
+        const placeholders = {
+          colegio:   '¿En qué grados quieres implementar el currículum? ¿Cuántos alumnos? ¿Tienes laboratorio de computación?',
+          patrocinio:'¿Cuál es tu marca o empresa? ¿Qué tipo de patrocinio te interesa?',
+          docente:   '¿Tienes experiencia previa en tecnología educativa? ¿Qué te interesa aprender o consultar?',
+          otro:      'Cuéntanos en qué podemos ayudarte...'
+        };
+        if (textarea) textarea.placeholder = placeholders[opt.dataset.type] || placeholders.otro;
+      });
+    });
+
+    // Scroll to form if hash is #patrocinio
+    if (window.location.hash === '#patrocinio') {
+      setTimeout(() => {
+        document.getElementById('patrocinio')?.scrollIntoView({ behavior: 'smooth' });
+      }, 400);
+    }
+  </script>
+</body>
+</html>

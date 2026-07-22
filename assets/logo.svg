@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="rgba(0,0,0,0.25)"/>
+    </filter>
+  </defs>
+
+  <!-- Background blob / orange outline shape -->
+  <ellipse cx="200" cy="105" rx="188" ry="85" fill="#F7A800" filter="url(#shadow)"/>
+  <ellipse cx="200" cy="105" rx="178" ry="75" fill="white"/>
+
+  <!-- "C" large orange letter -->
+  <text x="22" y="148" font-family="Arial Black, Impact, sans-serif" font-size="130" font-weight="900" fill="#F7A800" stroke="#F7A800" stroke-width="2">C</text>
+
+  <!-- "ompu" blue text -->
+  <text x="85" y="120" font-family="Arial Black, Impact, sans-serif" font-size="62" font-weight="900" fill="#1A3C8F">ompu</text>
+
+  <!-- "@" orange symbol -->
+  <text x="270" y="126" font-family="Arial Black, Impact, sans-serif" font-size="56" font-weight="900" fill="#F7A800">@</text>
+
+  <!-- "click" blue italic -->
+  <text x="108" y="172" font-family="Arial, sans-serif" font-size="52" font-weight="900" font-style="italic" fill="#1A3C8F">click</text>
+
+  <!-- Orange dot accent -->
+  <circle cx="354" cy="168" r="10" fill="#F7A800"/>
+</svg>
