@@ -320,7 +320,7 @@ button { cursor: pointer; border: none; font-family: var(--font-body); }
 }
 
 .hero-logo-wrap img {
-  width: 320px;
+  width: 450px;
   filter: drop-shadow(0 20px 60px rgba(247,168,0,0.5));
   animation: floatAnim 4s ease-in-out infinite;
   border-radius: var(--radius-lg);
@@ -1434,7 +1434,7 @@ button { cursor: pointer; border: none; font-family: var(--font-body); }
 @media (max-width: 1024px) {
   .hero-inner { grid-template-columns: 1fr; text-align: center; }
   .hero-visual { order: -1; }
-  .hero-logo-wrap img { width: 240px; }
+  .hero-logo-wrap img { width: 360px; }
   .hero-float-badge:nth-child(2) { right: 5%; }
   .hero-float-badge:nth-child(3) { left: 5%; }
   .hero-subtitle, .hero-buttons { margin-left: auto; margin-right: auto; }
@@ -1463,6 +1463,6 @@ button { cursor: pointer; border: none; font-family: var(--font-body); }
 
 @media (max-width: 480px) {
   .hero-title { font-size: 2rem; }
-  .hero-logo-wrap img { width: 200px; }
+  .hero-logo-wrap img { width: 280px; }
   .hero-float-badge { display: none; }
 }
