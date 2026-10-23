@@ -167,5 +167,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  console.log('🚀 Peque Clicks cargado correctamente');
+  console.log('🚀 Peque Clics cargado correctamente');
 });
